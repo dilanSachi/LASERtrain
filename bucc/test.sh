@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 fairseq-interactive data/sinhala.bpe40k-bin --lang-pairs en-si --user-dir ../fairseq-modules/ --task multilingual_translation_singlemodel --dataset-impl raw --path ../../../checkpoint_best.pt --results-path ./testr

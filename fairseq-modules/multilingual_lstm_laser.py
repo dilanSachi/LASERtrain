@@ -118,6 +118,8 @@ class MultilingualLSTMModelLaser(FairseqEncoderDecoderModel):
     def load_state_dict(self, state_dict, strict=True):
         state_dict_subset = state_dict.copy()
         for k, _ in state_dict.items():
+            print(k)
+            print("hey")
             assert k.startswith('model.')
         super().load_state_dict(state_dict_subset, strict=strict)
 
